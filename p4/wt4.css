@@ -1,0 +1,151 @@
+/* Basic settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f8f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Hero section */
+.hero {
+    background-color: #c8e6c9;
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h2 {
+    color: darkgreen;
+    font-size: 35px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Button */
+.btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+}
+
+/* Dashboard */
+.dashboard {
+    text-align: center;
+    padding: 40px;
+}
+
+.dashboard h2 {
+    color: green;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: green;
+}
+
+.value {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.status {
+    background-color: #c8e6c9;
+    color: green;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* Features */
+.features {
+    background-color: #e8f5e9;
+    text-align: center;
+    padding: 40px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: rgb(84, 244, 10);
+    width: 250px;
+    padding: 20px;
+    border: 2px solid rgb(19, 240, 148);
+    border-radius: 10px;
+}
+
+.feature:hover {
+    background-color: #c8e6c9;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(1, 141, 235);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

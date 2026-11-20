@@ -1,0 +1,243 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f8e9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #558b2f;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h2 {
+    animation: fadeIn 1s;
+}
+
+.hero button {
+    background-color: yellowgreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* General sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Technology Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px gray;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: green;
+}
+
+/* Extra Information */
+.extra-info {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, opacity 0.5s;
+}
+
+.extra-info.show {
+    max-height: 150px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+/* Benefits */
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-height: 300px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.5s, opacity 0.5s;
+}
+
+.benefits.hide {
+    max-height: 0;
+    opacity: 0;
+}
+
+.benefit {
+    background-color: #dcedc8;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.benefit:hover {
+    transform: scale(1.08);
+}
+
+/* Registration */
+form {
+    width: 350px;
+    max-width: 100%;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    background-color: darkgreen;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: darkgreen;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.notification.show {
+    animation: popup 0.5s forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .benefits {
+        flex-direction: column;
+    }
+}

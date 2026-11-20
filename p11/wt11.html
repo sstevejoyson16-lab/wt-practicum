@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture Registration</title>
+    <link rel="stylesheet" href="wt11.css">
+</head>
+<body>
+
+<header>
+    <h1>🌱 Smart Agriculture</h1>
+    <p>Smart Farming Registration Portal</p>
+</header>
+
+<section class="form-section">
+    <h2>Farmer Registration Form</h2>
+    <p>Register to access our smart farming solutions.</p>
+
+    <form id="farmerForm">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Farmer Name</label>
+            <input type="text" id="name" placeholder="Enter your name"
+                   minlength="3" maxlength="30"
+                   pattern="[A-Za-z ]{3,30}" required>
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Mobile Number</label>
+            <input type="tel" id="phone" placeholder="10-digit mobile number"
+                   pattern="[6-9][0-9]{9}" maxlength="10" required>
+            <span class="error" id="phoneError"></span>
+
+            <label for="location">Farm Location</label>
+            <input type="text" id="location" placeholder="Village / District"
+                   minlength="3" maxlength="50" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Farm Details</legend>
+
+            <label for="crop">Crop Type</label>
+            <select id="crop" required>
+                <option value="">Select a crop</option>
+                <option>Rice</option>
+                <option>Wheat</option>
+                <option>Maize</option>
+                <option>Sugarcane</option>
+                <option>Vegetables</option>
+                <option>Other</option>
+            </select>
+
+            <label for="size">Farm Size (in acres)</label>
+            <input type="number" id="size" placeholder="Enter farm size"
+                   min="0.1" max="10000" step="0.1" required>
+
+            <label for="message">Additional Requirements</label>
+            <textarea id="message" placeholder="Enter your requirements (optional)"
+                      maxlength="200"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset" class="reset-btn">Clear Form</button>
+
+        <p id="successMessage"></p>
+
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Smart Agriculture | Smart Farming Solutions</p>
+</footer>
+
+<script src="wt11.js"></script>
+</body>
+</html>

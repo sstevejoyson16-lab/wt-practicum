@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture Task Manager</title>
+    <link rel="stylesheet" href="wt13.css">
+</head>
+<body>
+
+<header>
+    <h1>🌱 Smart Agriculture</h1>
+    <p>Farm Task Management System</p>
+</header>
+
+<section class="task-section">
+
+    <h2>Add Farm Task</h2>
+
+    <form id="task-form">
+
+        <input type="hidden" id="task-id">
+
+        <label>Task Name</label>
+        <input type="text" id="task-name" placeholder="Enter task name" required>
+
+        <label>Description</label>
+        <textarea id="task-description" placeholder="Enter task details" required></textarea>
+
+        <label>Category</label>
+        <select id="task-category" required>
+            <option value="">Select Category</option>
+            <option>Watering</option>
+            <option>Fertilizing</option>
+            <option>Crop Monitoring</option>
+            <option>Harvesting</option>
+            <option>Maintenance</option>
+        </select>
+
+        <label>Due Date</label>
+        <input type="date" id="task-date" required>
+
+        <label>Status</label>
+        <select id="task-status">
+            <option>Pending</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+        </select>
+
+        <button type="submit" id="submit-btn">Add Task</button>
+        <button type="button" id="cancel-btn">Cancel Edit</button>
+
+    </form>
+
+</section>
+
+<section class="list-section">
+
+    <h2>Farm Task List</h2>
+
+    <label>Filter Tasks</label>
+    <select id="filter-status">
+        <option value="All">All Tasks</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+    </select>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="task-list">
+            </tbody>
+        </table>
+    </div>
+
+    <p id="empty-message">No tasks available.</p>
+
+</section>
+
+<footer>
+    <p>© 2026 Smart Agriculture | Farm Task Manager</p>
+</footer>
+
+<script src="wt13.js"></script>
+</body>
+</html>

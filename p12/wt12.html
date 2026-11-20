@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture API Dashboard</title>
+    <link rel="stylesheet" href="wt12.css">
+</head>
+<body>
+
+<header>
+    <h1>🌱 Smart Agriculture</h1>
+    <p>IoT Farm Monitoring Dashboard</p>
+</header>
+
+<section class="dashboard">
+    <h2>Farm Weather & Sensor Data</h2>
+
+    <p>Live weather information for agricultural monitoring.</p>
+
+    <button id="refresh-btn">Refresh Data</button>
+
+    <p id="loading">Loading farm data...</p>
+
+    <p id="error"></p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                    <th>Unit</th>
+                </tr>
+            </thead>
+
+            <tbody id="data-body">
+            </tbody>
+        </table>
+    </div>
+
+    <p id="updated-time"></p>
+</section>
+
+<section class="info">
+    <h2>Why Monitor Farm Weather?</h2>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>🌡 Temperature</h3>
+            <p>Helps farmers understand crop growing conditions.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>💧 Humidity</h3>
+            <p>Helps monitor moisture conditions in the atmosphere.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🌧 Rainfall</h3>
+            <p>Helps plan irrigation and water usage.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🌬 Wind Speed</h3>
+            <p>Helps plan spraying and outdoor farming activities.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Smart Agriculture | API Data Monitoring</p>
+</footer>
+
+<script src="wt12.js"></script>
+</body>
+</html>

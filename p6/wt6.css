@@ -1,0 +1,240 @@
+
+/* Basic Styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f8e9;
+    color: #333;
+}
+
+/* Sticky Header */
+header {
+    background-color: darkgreen;
+    color: white;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 70, 0, 0.6), rgba(0, 70, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: yellowgreen;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+}
+
+/* Absolute Positioning */
+.hero-tag {
+    background-color: orange;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Technology Section */
+.technology {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+
+    position: static;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Sensors */
+.sensors {
+    background-color: #dcedc8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sensor-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sensor {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-left: 5px solid green;
+    border-radius: 8px;
+}
+
+/* Benefits */
+.benefits {
+    padding: 40px;
+    text-align: center;
+}
+
+.benefits ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
+}
+
+/* Registration */
+.register {
+    background-color: #c8e6c9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+/* Footer */
+footer {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Fixed Positioning */
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .cards,
+    .sensor-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}

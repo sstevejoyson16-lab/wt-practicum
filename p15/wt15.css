@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8f5e9;
+    padding: 30px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    color: darkgreen;
+    margin-bottom: 15px;
+}
+
+.container > p {
+    margin-bottom: 25px;
+}
+
+.control-box, .info {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #00000020;
+}
+
+h2 {
+    color: #2e7d32;
+    margin-bottom: 25px;
+}
+
+/* Custom Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+}
+
+.switch input {
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #999;
+    border-radius: 40px;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    bottom: 5px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+    background: #2e7d32;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(40px);
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c62828;
+}
+
+#message {
+    margin-top: 10px;
+    color: #555;
+}
+
+.info h3 {
+    color: darkgreen;
+    margin-bottom: 12px;
+}
+
+.info p {
+    line-height: 1.6;
+}

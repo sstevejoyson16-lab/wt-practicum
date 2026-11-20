@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture DOM</title>
+    <link rel="stylesheet" href="wt10.css">
+</head>
+<body>
+
+<header>
+    <h1>🌱 Smart Agriculture</h1>
+    <p>Technology for modern farming</p>
+</header>
+
+<section id="home">
+    <h2>Welcome to Smart Farming</h2>
+    <p id="description">
+        Monitor crops, soil and farm conditions using IoT technology.
+    </p>
+
+    <button id="change-btn">Change Description</button>
+</section>
+
+<section id="sensors">
+    <h2>Farm Sensor Information</h2>
+
+    <div class="sensor-container" id="sensor-container">
+
+        <div class="sensor-card">
+            <h3>Soil Moisture</h3>
+            <p>Moisture Level: 65%</p>
+            <span>Normal</span>
+            <button class="remove-btn">Remove</button>
+        </div>
+
+        <div class="sensor-card">
+            <h3>Temperature</h3>
+            <p>Temperature: 28°C</p>
+            <span>Normal</span>
+            <button class="remove-btn">Remove</button>
+        </div>
+
+    </div>
+
+    <button id="add-sensor">Add Sensor</button>
+</section>
+
+<section id="register">
+    <h2>Farmer Registration</h2>
+
+    <form id="farmer-form">
+        <input type="text" id="farmer-name" placeholder="Enter Farmer Name" required>
+        <input type="text" id="farm-location" placeholder="Enter Farm Location" required>
+        <button type="submit">Add Farmer</button>
+    </form>
+
+    <h3>Registered Farmers</h3>
+    <ul id="farmer-list"></ul>
+</section>
+
+<footer>
+    <p>© 2026 Smart Agriculture</p>
+</footer>
+
+<script src="wt10.js"></script>
+</body>
+</html>

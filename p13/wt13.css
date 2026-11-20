@@ -1,0 +1,135 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f8e9;
+    color: #333;
+}
+
+header {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+h2 {
+    color: darkgreen;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: darkgreen;
+    transform: scale(1.03);
+}
+
+#cancel-btn {
+    background-color: gray;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 700px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: darkgreen;
+    color: white;
+}
+
+td {
+    background-color: #f9fff5;
+}
+
+/* Status Colors */
+.status-pending {
+    color: #b36b00;
+    font-weight: bold;
+}
+
+.status-progress {
+    color: blue;
+    font-weight: bold;
+}
+
+.status-completed {
+    color: green;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+}
